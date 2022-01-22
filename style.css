@@ -1,0 +1,505 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+* {
+	box-sizing: border-box;
+  }
+
+  a{
+	  text-decoration: none;
+  }
+
+
+body{
+	margin: 0px;
+	font-family: Roboto;
+	font-size: 14px;
+}
+
+.navbar{
+	overflow: hidden;
+	background-color: maroon;
+	
+}
+
+.navbar::after{
+	content: " ";
+	clear: both;
+	display: table;
+}
+
+.navbar .logo{
+	font-family: Pacifico;
+	float: left;
+	color: mintcream;
+	margin: 5px;
+	padding: 0px 10px 0px 10px;
+	font-size: 20px;
+}
+
+.navbar .logo:hover{
+	transition: ease-in-out 2s;
+	color: #fff;
+	text-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 21px #fff,
+		0 0 42px #0fa,
+		0 0 82px #0fa,
+		0 0 92px #0fa,
+		0 0 102px #0fa,
+		0 0 151px #0fa;
+}
+
+.navbar .new{
+	float: right;
+	color: mintcream;
+	background-color:brown;
+	margin: 10px;
+	padding: 5px 10px 5px 10px;
+	border-radius: 50px;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+.navbar .new:hover{
+	background-color: black;
+	transition: ease-in-out 1s;
+}
+
+.login{
+	margin: 1px;
+	border: rgba(128, 128, 128, 0.527) 1px solid;
+	box-shadow: rgba(192, 192, 192, 0.342) 1px 1px 1px;
+	padding: 20px 10px;
+	border-radius: 3px;
+}
+
+.login .login-input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid maroon;
+	border-radius: 4px;
+  }
+
+  .login .login-input:hover{
+	  border-color: #000;
+	  transition: ease-in-out 1s;
+  }
+
+  .login-input-select{
+	font-size: 15px;
+	width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid maroon;
+border-radius: 4px;
+}
+
+.login .login-input-select:hover{
+	border-color: #000;
+	transition: ease-in-out 1s;
+}
+
+.login .submit{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid maroon;
+	border-radius: 4px;
+	background-color: maroon;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.login .submit a{
+	text-decoration: none;
+}
+
+.login .submit:hover{
+	background-color: #000;
+	transition: ease-in-out 1s;
+}
+
+.footer{
+	background-color: maroon;
+	color: #FFF;
+	padding: 5px;
+	text-align: center;
+
+}
+
+.error {
+	border: #810e14f8 1px solid;
+	padding:10px 5px 10px 5px;
+	color:#810e14f8;
+	background-color:#FFBABA;
+	margin:1px;
+	font-size: 12px;
+	border-radius: 3px;
+	}
+
+	.error a{
+		color: #4F8A10;
+		text-decoration: none;
+	}
+
+.success{
+		color:#4F8A10;
+		background-color:#DFF2BF;
+		border: #4F8A10 1px solid;
+		padding:10px 5px 10px 5px;
+		margin:1px;
+		font-size: 12px;
+		border-radius: 3px;
+	}
+
+	.limit{
+		background:maroon;
+		color: #ccc;
+		text-align: center;
+	}
+
+	.limit a{
+		color:#ccc;
+	}
+	
+	.menu {
+		float: left;
+		width: 19.5%;
+		padding: 10px;
+		border: #ccc 1px solid;
+	  }
+
+	  .menu:hover{
+		  background-color: black;
+		  transition: ease-in-out 0.5s;
+	  }
+
+	  .menu-message:hover{
+		background-color: black;
+		transition: ease-in-out 0.5s;
+	}
+
+	  .menu-message {
+		float: left;
+		width: 22%;
+		padding: 10px;
+		border: #ccc 1px solid;
+	  }
+
+	  .limit:after {
+		content: "";
+		display: table;
+		clear: both;
+	  }
+
+#preloader{
+	width: 100%;
+	height: 100vh;
+	background: rgb(255, 255, 255) url(preloader.gif) no-repeat center center;
+	background-size: 50%;
+	position: fixed;
+	z-index: 100;
+}
+ 
+
+.group-chat-messages-input{
+	width: 100%;
+	height: 50px;
+	border: maroon 1px solid;
+
+}
+
+.group-chat-messages-input:hover{
+	border: black 1px solid;
+}
+
+.group-chat-profile{
+	height: 50px;
+	border: maroon 1px solid;
+}
+
+.group-chat-profile:hover{
+	background: maroon;
+}
+
+.group-chat-submit{
+	width: 100%;
+	height: 50px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid maroon;
+	border-radius: 4px;
+	background-color: maroon;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.group-chat-submit:hover{
+	background: black;
+	border-color: black;
+}
+
+.title{
+	width: 100%;
+	padding: 5px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: maroon;
+	color: #FFF;
+}
+
+.group-chat-messages{
+	margin: 1px;
+	border: rgba(128, 128, 128, 0.527) 1px solid;
+	padding: 1px 5px 1px 5px;
+	border-radius: 3px;
+	word-wrap: break-word;
+}
+
+.group-chat-messages a{
+	color:maroon;
+	text-decoration: none;
+}
+
+.group-chat-messages a:hover{
+	color: brown;
+}
+
+.group-chat-messages p{
+	margin: 3px;
+}
+
+.group-chat-button{
+	text-align: center;
+	background: maroon;
+	color: mintcream;
+	padding: 5px;
+	text-decoration: none;
+}
+
+.group-chat-button a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.group-chat-button:hover{
+	background: #000;
+}
+
+.footer-menu{
+	margin: 1px;
+	border: rgba(128, 128, 128, 0.527) 1px solid;
+	box-shadow: rgba(192, 192, 192, 0.342) 1px 1px 1px;
+	padding: 5px 5px 5px 50px;
+	border-radius: 3px;
+}
+
+.footer-menu a{
+	text-decoration: none;
+	color: maroon;
+}
+
+.footer-menu a:hover{
+	color:black;
+}
+
+.profile{
+	margin: 1px;
+	border: rgba(128, 128, 128, 0.527) 1px solid;
+	box-shadow: rgba(192, 192, 192, 0.342) 1px 1px 1px;
+	padding: 20px 10px;
+	border-radius: 3px;
+	color:rgb(58, 58, 58);
+	font-size: 15px;
+}
+
+.profile-photo{
+	height: auto;
+	width: 100px;
+	border: maroon 1px solid;
+}
+
+.profile h1{
+    font-size:15px;
+	margin: 5px 0px;
+	padding: 5px 0px;
+	color: maroon;
+}
+
+.profile p{
+	font-family: Roboto;
+	padding: 1px;
+	display: inline;
+	color: #000;
+}
+
+
+.list{
+	margin: 1px;
+	border: rgba(128, 128, 128, 0.527) 1px solid;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.friends{
+	margin: 1px;
+	border: rgba(128, 128, 128, 0.527) 1px solid;
+	box-shadow: rgba(192, 192, 192, 0.342) 1px 1px 1px;
+	padding: 20px 10px;
+	border-radius: 3px;
+}
+
+.friends a{
+	text-decoration: none;
+	color: maroon;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0px 10px;
+}
+
+.friends a:hover{
+	color: brown;
+}
+
+.friends-profile{
+	width: 100px;
+	height: 100px;
+	border:maroon 1px solid;
+}
+
+.friends-profile:hover{
+	border-color: black;
+}
+
+
+.friends-button{
+	color: mintcream;
+	background-color:maroon;
+	margin: 10px 5px;
+	padding: 5px 10px 5px 10px;
+	border-radius: 50px;
+	font-size: 10px;
+	text-decoration: none;
+	border:1px maroon solid;
+}
+
+
+
+.friends-button:hover{
+	background: #000;
+	border-color: black;
+	transition: ease-in-out 0.5s;
+}
+
+.help-input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid maroon;
+	border-radius: 4px;
+}
+
+.help-text-input{
+	width: 100%;
+	height: 50px;
+	border: maroon 1px solid;
+}
+
+
+
+.help-submit{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid maroon;
+	border-radius: 4px;
+	background-color: maroon;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.help-submit:hover{
+	background-color: black;
+	border-color: black;
+}
+
+.setting{
+	margin: 1px;
+	border: rgba(128, 128, 128, 0.527) 1px solid;
+	padding: 5px;
+	border-radius: 3px;
+	color: maroon;
+}
+
+.setting:hover{
+	background: maroon;
+	color: wheat;
+}
+
+.cprofile-input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid maroon;
+	border-radius: 4px;
+}
+
+.cprofile-input:hover{
+	border: #000 1px solid;
+}
+
+.cprofile-submit{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid maroon;
+	border-radius: 4px;
+	background-color: maroon;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.cprofile-submit:hover{
+	background: black;
+	border-color: black;
+}
+
+.cprofile-photo{
+	height: 100px;
+	width: auto;
+	border: maroon 1px solid;
+}
+
+.cprofile-upload{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid maroon;
+	border-radius: 4px;
+}
+
+.cprofile-upload-submit{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid maroon;
+	border-radius: 4px;
+	background-color: maroon;
+	color: #FFF;
+	font-weight: bold;
+}
+
